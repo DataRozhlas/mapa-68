@@ -5,7 +5,7 @@
 <!--embed-->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"></script>
-<script src="http://data.irozhlas.cz/mapa-68/map_data.js"></script>
+<script src="https://data.irozhlas.cz/mapa-68/map_data.js"></script>
 
 <style>
     #map {
@@ -46,10 +46,10 @@
 
         markers.push(pnt)
 
-        pnt.on('click', function(evt){
-            var ops = evt.target.options
+        pnt.on('click', function(evt) {
+            var ops = evt.target.options;
             document.getElementById('legend').innerHTML = '<b>' + ops.titulek + '</b><br>' + ops.popis 
-            + '<br><a target="_blank" rel="noopener noreferrer" href="'+ ops.url + '">čtěte více</a>'
+            + '<br><a target="_blank" rel="noopener noreferrer" href="'+ ops.url + '">čtěte více</a>';
         });
     });
 
